@@ -7,6 +7,7 @@ export default {
     input: './src/index.js',
     output: {
         file: './dist/main.js',
-        format: 'iife'
+        format: 'iife',
+        name: 'DUII'
     }
 }

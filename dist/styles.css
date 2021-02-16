@@ -1,0 +1,88 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  max-height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  background: linear-gradient(to left,red,green);
+
+}
+.button {
+  width: 100%;
+  border-radius: 10px;
+  color: thistle;
+  cursor: pointer;
+  height: auto;
+}
+option {
+  text-align: center;
+  margin: 4px 0px;
+}
+.button > * {
+  background-color: teal;
+  border-bottom: 1px solid gray;
+}
+.button > option:nth-child(7) {
+  border-bottom: none;
+}
+button {
+width: 100%;
+  background-color: teal;
+  color: thistle;
+  padding: 5px 15px;
+  border-radius: 10px;
+}
+.arrowDown {
+  position: relative;
+  bottom: -13px;
+  right: -5px;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid red;
+}
+.carousel {
+  margin: 20px auto;
+  width: 70vw;
+  height: 70vh;
+}
+img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.btn {
+  border-bottom: 20px solid transparent;
+  border-top: 20px solid transparent;
+  display: inline-block;
+  position: relative;
+  top:-50%;
+}
+.nextbtn {
+  border-left: 20px solid red;
+  right: -91%;
+}
+.prevbtn {
+  border-right: 20px solid red;
+  left: 2%;
+}
+.dots {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  right: -50%;
+top: -50px;
+  margin: 0px 5px;
+}
+.inactive {
+  background-color: gray;
+}
+.active {
+  background-color: white;
+}
